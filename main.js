@@ -80,16 +80,16 @@ async function main() {
             // 保存日志
             const currentTime = new Date().toISOString();
             const logMessage = `成功执行 - 时间: ${currentTime}, 钱包名称: ${wt.Wallet},钱包地址: ${wt.Address}`;
-            saveLog(`${CONFIG.baseconfig.projectName}Sucess`, logMessage);
+            saveLog(`${baseConfig.projectName}Sucess`, logMessage);
             // 暂停
-            const sleepTime = getRandomFloat(CONFIG.baseconfig.minSleepTime, CONFIG.baseconfig.maxSleepTime).toFixed(1); 
+            const sleepTime = getRandomFloat(baseConfig.minSleepTime, baseConfig.maxSleepTime).toFixed(1); 
             console.log(logMessage, '程序暂停',sleepTime,'分钟后继续执行');
             await sleep(sleepTime);
         } catch (error) {
             // 保存错误日志
             const currentTime = new Date().toISOString();
             const logMessage = `失败 - 时间: ${currentTime}, 钱包名称: ${wt.Wallet},钱包地址: ${wt.Address},错误信息: ${error}`;
-            saveLog(`${CONFIG.baseconfig.projectName}Error`, logMessage);
+            saveLog(`${baseConfig.projectName}Error`, logMessage);
             console.log('程序出现错误，暂停30分钟后继续执行。');
             await sleep(30);
         }
