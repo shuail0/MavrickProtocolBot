@@ -1,0 +1,58 @@
+{
+    "baseConfig":{
+        "test":false,
+        "walletPath": "/Users/lishuai/Documents/crypto/bockchainbot/TestWalletData.csv",
+        "projectName": "Maverick",
+        "maxGasPrice": 30,
+        "minAmountPct": 0.2,
+        "maxAmountPct": 0.3,
+        "minSleepTime": 1,
+        "maxSleepTime": 5
+    },
+    "Network":{
+        "mainNetwork": {
+            "RPC":{
+            "zks":"https://mainnet.era.zksync.io",
+            "eth":"https://eth-mainnet.g.alchemy.com/v2/qRnk4QbaEmXJEs5DMnhitC0dSow-qATl"
+            },
+            "tokenAddress":{
+                "wETHAddress": "0x5AEa5775959fBC2557Cc8789bC1bf90A239D9a91",
+                "wETH9Address": "0x5AEa5775959fBC2557Cc8789bC1bf90A239D9a91",
+                "usdcAddress": "0x3355df6D4c9C3035724Fd0e3914dE96A5a83aaf4",
+                "ZERO_ADDRESS": "0x0000000000000000000000000000000000000000",
+                "ETH_ADDRESS": "0x0000000000000000000000000000000000000000",
+                "USD+_Address": "0x8E86e46278518EFc1C5CEd245cBA2C7e3ef11557"
+            },
+            "contractAddress":{
+                "Factory": "0x2C1a605f843A2E18b7d7772f0Ce23c236acCF7f5",
+                "Position": "0xFd54762D435A490405DDa0fBc92b7168934e8525",
+                "PositionInspector": "0x852639EE9dd090d30271832332501e87D287106C",
+                "PoolInformation": "0x6968981B1D557e266E14982dC70d16044d6d1308",
+                "PoolPositionManager": "0x17132CE52D40248F5077f4F51C6E3BDf7682749F",
+                "Router": "0x39E098A153Ad69834a9Dac32f0FCa92066aD03f4"
+            }
+        },
+        "testNetwork":{
+            "RPC":{
+            "zks":"http://127.0.0.1:8545",
+            "eth":"https://eth-mainnet.g.alchemy.com/v2/qRnk4QbaEmXJEs5DMnhitC0dSow-qATl"
+            },
+            "tokenAddress":{
+                "wETHAddress": "0x20b28b1e4665fff290650586ad76e977eab90c5d",
+                "wETH9Address": "0x5AEa5775959fBC2557Cc8789bC1bf90A239D9a91",
+                "usdcAddress": "0xfcEd12dEbc831D3a84931c63687C395837D42c2B",
+                "ZERO_ADDRESS": "0x0000000000000000000000000000000000000000",
+                "ETH_ADDRESS": "0x0000000000000000000000000000000000000000",
+                "USD+_Address": "0x8E86e46278518EFc1C5CEd245cBA2C7e3ef11557"
+            },
+            "contractAddress":{
+                "Factory": "0x2C1a605f843A2E18b7d7772f0Ce23c236acCF7f5",
+                "Position": "0xFd54762D435A490405DDa0fBc92b7168934e8525",
+                "PositionInspector": "0x852639EE9dd090d30271832332501e87D287106C",
+                "PoolInformation": "0x6968981B1D557e266E14982dC70d16044d6d1308",
+                "PoolPositionManager": "0x17132CE52D40248F5077f4F51C6E3BDf7682749F",
+                "Router": "0x39E098A153Ad69834a9Dac32f0FCa92066aD03f4"
+            }
+        }
+    }
+}
